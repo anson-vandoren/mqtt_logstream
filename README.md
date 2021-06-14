@@ -1,7 +1,8 @@
 # MQTT forwarder for Cribl LogStream
 
 This is a very simplistic utility to push MQTT payloads from a local (behind a firewall)
-broker up to Cribl LogStream for further shaping/dissemination.
+broker up to Cribl LogStream for further shaping/dissemination. It's written to send to
+a LogStream Cloud `tcp_json` source over TLS.
 
 # Usage
 
