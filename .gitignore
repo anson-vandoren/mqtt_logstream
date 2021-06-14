@@ -1,0 +1,8 @@
+# don't commit creds...
+config.yml
+
+# don't commit compiled binary
+mqtt_logstream
+
+# not worth committing JetBrains config, even though they always ask...
+.idea/

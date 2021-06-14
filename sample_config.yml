@@ -1,0 +1,22 @@
+broker:
+  # MQTT broker to subscribe to, including port
+  address: "tcp://192.168.1.18:1883"
+  # clientID to register with the MQTT broker - must be unique on the broker
+  clientID: "LogstreamAdapter"
+  # topics to subscribe to - examples below are common for Tasmota devices
+  topics:
+    - "cmnd"
+    - "stat"
+    - "tele"
+
+logstream:
+  # LogStream Cloud address - should start with 'in.logstream' and end in 'cribl.cloud'
+  address: "in.logstream.ferocious-bitincka.cribl.cloud"
+  # port for tcp-json input stream - 10070 is the default
+  port: 10070
+  # authorization token for tcp-json endpoint, if set up
+  authToken: ""
+  # additional fields to send with all JSON messages to LogStream - these are freeform, and optional
+  fields:
+    host: "broker.local"
+    source: "mqtt-logstream-forwarder"
